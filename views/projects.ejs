@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ugochukwu's Projects</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.10/fullpage.min.css"
+        integrity="sha512-5MGDCtVeXPQtSGLs2lG9mkb1tWc35ZSaBgJca+YMJxOIgLUaopFR28hmwJCk0W2KR8Ydt7vg3E+KS5XwbNFmMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Finlandica&family=Anonymous+Pro&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,700;8..144,800;8..144,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/nav.css">
+
+    <link rel="stylesheet" href="css/projects.css">
+
+</head>
+
+<body>
+    <%- include("nav.ejs") %>
+
+        <div id="fullPage">
+            <div class="section">
+                <% projects.forEach (project=> { %>
+                    <div class="slide">
+                        <div class="wrapper">
+                            <div class="header">
+                                <p class="smaller">Featured Project</p>
+                                <h2>
+                                    <%= project.title %>
+                                </h2>
+                            </div>
+
+                            <div class="project-description">
+                                <p>
+                                    <%= project.description %>
+                                </p>
+                            </div>
+
+                            <div class="project-technologies">
+                                <small>
+                                    <%= project.tech %>
+                                </small>
+                                <div class="awesome">
+                                    <i class="fa-brands fa-github" onclick='window.open("<%= project.github %>")'></i>
+                                    <% if(project.website) { %>
+                                        <i class="fa-solid fa-arrow-up-right-from-square"
+                                            onclick='window.open("<%= project.website %>")'></i>
+                                        <% } %>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+
+        </div>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.10/fullpage.min.js"
+    integrity="sha512-Xaje5GN/tSuxnQNdbOMppDPWWpPMN0WGfay1St6ckxBqnm3hB66iVqBbLXmujadwsH9KOUVHJZ3GR9QpAEF1GQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript">
+    new fullpage("#fullPage", {
+        autoScrolling: true,
+        // navigation: true,
+        credits: { enabled: false },
+        recordHistory: false,
+        controlArrows: false,
+        slidesNavigation: true,
+        scrollHorizontally: true,
+        continuousHorizontal: true,
+        dragAndMove: true,
+
+    })
+</script>
+<script src="index.js"></script>
+
+<script src="https://kit.fontawesome.com/ae58067270.js" crossorigin="anonymous"></script>
+
+
+</html>

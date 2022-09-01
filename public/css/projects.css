@@ -1,0 +1,81 @@
+body {
+  background-color: rgb(7, 5, 15);
+  color: #fff;
+}
+body::after {
+  opacity: 0.1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* position: absolute; */
+  z-index: -1;
+}
+
+div.wrapper {
+  font-family: "Finlandica", sans-serif;
+  height: 50vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 5vh;
+  padding: 40px;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+.header p {
+  font-size: 1.8rem;
+  color: #f6c688;
+}
+.project-description p {
+  font-size: 1.5rem;
+  width: 700px;
+  max-width: 100%;
+}
+
+.project-technologies {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .header p {
+    font-size: large;
+  }
+  .header h2 {
+    font-size: 1.5rem;
+  }
+  .project-description p {
+    font-size: 0.9rem;
+  }
+
+  .project-technologies {
+    font-size: 1rem;
+  }
+}
+
+.fp-slidesNav li a span {
+  background: rgb(255, 255, 255) !important;
+}
+
+#fp-nav ul,
+.fp-slidesNav ul {
+  text-align: center;
+}
+.awesome {
+  padding-top: 1.1rem;
+}
+
+.awesome i {
+  font-size: 2rem;
+  color: aliceblue;
+  margin-right: 1rem;
+}
+
+.awesome i:hover {
+  color: #f6c688;
+  font-size: 2.1rem;
+}

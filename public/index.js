@@ -40,7 +40,7 @@ function removeBackground() {
 }
 
 const typedTextSpan = document.querySelector(".typed-text");
-const cursorSpan = document.querySelector(".cursor");
+// const cursorSpan = document.querySelector(".cursor");
 
 const textArray = ["Hi, I'm Ugochukwu", "Backend developer", "Undergraduate"];
 const typingDelay = 100;
@@ -51,8 +51,8 @@ let charIndex = 0;
 
 function type() {
   if (charIndex < textArray[textArrayIndex].length) {
-    if (!cursorSpan.classList.contains("typing"))
-      cursorSpan.classList.add("typing");
+    // if (!cursorSpan.classList.contains("typing"))
+    //   cursorSpan.classList.add("typing");
     typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
     charIndex++;
     setTimeout(type, typingDelay);

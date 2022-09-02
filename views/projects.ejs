@@ -82,6 +82,13 @@
 
 
     })
+    let time = Date.now()
+    document.addEventListener("wheel", event => {
+        if (Date.now() - time < 10000 ) {
+            event.deltaX > 0 && fullpage_api.moveSlideRight();
+            event.deltaX < 0 && fullpage_api.moveSlideLeft();
+        }
+    })
 </script>
 <script src="index.js"></script>
 

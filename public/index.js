@@ -25,14 +25,15 @@ function clickCheck() {
   document.querySelector("ul.menu-items").style.backgroundColor = isNotLaptop
     ? pageColor
     : "";
-  !isChecked && setTimeout(removeBackground, 1000);
+  !isChecked && setTimeout(removeBackground, 600);
+  // !isChecked && removeBackground();
 }
 
 function unCheck() {
   document.getElementById("Checkbox").checked = false;
   const content = document.getElementById("fullPage");
   content.classList.remove("content");
-  setTimeout(removeBackground, 1000);
+  setTimeout(removeBackground, 600);
 }
 
 function removeBackground() {

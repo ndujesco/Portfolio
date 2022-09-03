@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ugochukwu's Projects</title>
+</script>
+<script src="https://kit.fontawesome.com/ae58067270.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.10/fullpage.min.css"
         integrity="sha512-5MGDCtVeXPQtSGLs2lG9mkb1tWc35ZSaBgJca+YMJxOIgLUaopFR28hmwJCk0W2KR8Ydt7vg3E+KS5XwbNFmMQ=="
@@ -89,9 +91,21 @@
 
     })
 </script>
-<script src="index.js"></script>
+<script type="text/javascript">
+    function clickCheck() {
+        const isChecked = document.getElementById("Checkbox").checked;
+        const content = document.getElementById("fullPage");
+        isChecked && content.classList.add("content");
+        !isChecked && content.classList.remove("content");
+         document.querySelector("ul.menu-items").style.backgroundColor = "#07050f"
+    }
 
-<script src="https://kit.fontawesome.com/ae58067270.js" crossorigin="anonymous"></script>
+    function unCheck() {
+        document.getElementById("Checkbox").checked = false;
+        const content = document.getElementById("fullPage");
+        content.classList.remove("content");
+    }
+</script>
 
 
 </html>

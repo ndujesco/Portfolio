@@ -39,4 +39,8 @@ app.get("/works", (req, res) => {
   res.render("projects", { projects });
 });
 
+
+app.use((req, res) => {
+  res.render("404", {url: req.url})
+})
 app.listen(process.env.PORT || 3000);

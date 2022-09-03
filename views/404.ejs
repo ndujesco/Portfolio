@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Finlandica&family=Anonymous+Pro&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,700;8..144,800;8..144,900&display=swap"
+        rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/404/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/404/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/404/favicon-16x16.png">
+        <link rel="manifest" href="images/404/site.webmanifest">
+
+            <link rel="stylesheet" href="css/nav.css">
+    <title>404 Error</title>
+</head>
+<style>
+    *,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.home {
+  font-family: "Finlandica", sans-serif;
+
+  color: aliceblue;
+  background-color: #000;
+  /* background-image: url("../images/future-grid.75d130b0.webp"); */
+  height: 100vh;
+  background-size: 100% 100%;
+}
+.home-body {
+  padding-top: 35vh;
+  text-align: center;
+}
+.home-body h1 {
+  line-height: 1.1;
+  font-weight: 700;
+  font-size: 8rem;
+}
+.home-skills {
+  margin-top: 15px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .home-body h1 {
+    line-height: 1.1;
+    font-weight: 600;
+    font-size: 6rem;
+  }
+  .home-body {
+    padding-top: 30vh;
+  }
+  .home-skills {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-body h1 {
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 3.8rem;
+  }
+  .home-body {
+    padding-top: 30vh;
+  }
+  .home-skills h2 {
+    font-size: 1rem;
+  }
+}
+</style>
+<body>
+    <%- include("nav.ejs") %>
+    <div id="fullPage">
+        <div id="" class=" home">
+            <div class="container container-fluid home-every">
+                <div class="home-body">
+                    <h1>Page not found</h1>
+                </div>
+
+                <div class="home-skills">
+
+                    <h2>The url <span style="color: #f6c688;">
+                            <%= url %>
+                        </span>does not exist.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</body>
+<script >
+    function clickCheck() {
+            const isChecked = document.getElementById("Checkbox").checked;
+            const content = document.getElementById("fullPage");
+            isChecked && content.classList.add("content");
+            !isChecked && content.classList.remove("content");
+        }
+
+        function unCheck() {
+            document.getElementById("Checkbox").checked = false;
+            const content = document.getElementById("fullPage");
+            content.classList.remove("content");
+        }
+</script>
+</html>

@@ -47,7 +47,7 @@ h1.logo {
 }
 
 @media (max-width: 768px) {
-  .ul.menu-items {
+  ul.menu-items {
     background-color: #000;
   }
   .content {

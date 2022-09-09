@@ -22,9 +22,9 @@ const projects = [
   {
     title: "Blog Website",
     description: `Came across <a style='color:  #f6c688;' href='https://startbootstrap.com/previews/clean-blog/' target='_blank'>this blog template <a/>and decided to modify give it a backend. Here I performed basic CRUD operations and worked on database relationships.`,
-    github: "https://github.com/ndujesco/blog",
+    github: "https://github.com/ndujesco/blog-nodejs",
     website: "https://random-musings.herokuapp.com/",
-    tech: "Flask | Jinja | Postgres",
+    tech: "Nodejs | Python | Flask | MongoDB",
   },
 ];
 app.use(express.static("public"));

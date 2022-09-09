@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Ugochukwu's Projects</title>
-</script>
-<script src="https://kit.fontawesome.com/ae58067270.js" crossorigin="anonymous"></script>
+    </script>
+    <script src="https://kit.fontawesome.com/ae58067270.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.10/fullpage.min.css"
         integrity="sha512-5MGDCtVeXPQtSGLs2lG9mkb1tWc35ZSaBgJca+YMJxOIgLUaopFR28hmwJCk0W2KR8Ydt7vg3E+KS5XwbNFmMQ=="
@@ -19,11 +19,11 @@
         href="https://fonts.googleapis.com/css2?family=Finlandica&family=Anonymous+Pro&family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,500;8..144,700;8..144,800;8..144,900&display=swap"
         rel="stylesheet">
 
-        <!-- favicon -->
-        <link rel="apple-touch-icon" sizes="180x180" href="/images/fav/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/images/fav/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/images/fav/favicon-16x16.png">
-        <link rel="manifest" href="images/fav/site.webmanifest">
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/fav/favicon-16x16.png">
+    <link rel="manifest" href="images/fav/site.webmanifest">
 
     <link rel="stylesheet" href="css/nav.css">
 
@@ -48,7 +48,7 @@
 
                             <div class="project-description">
                                 <p>
-                                    <%= project.description %>
+                                    <%- project.description %>
                                 </p>
                             </div>
 
@@ -97,7 +97,7 @@
         const content = document.getElementById("fullPage");
         isChecked && content.classList.add("content");
         !isChecked && content.classList.remove("content");
-         document.querySelector("ul.menu-items").style.backgroundColor = "#07050f"
+        document.querySelector("ul.menu-items").style.backgroundColor = "#07050f"
     }
 
     function unCheck() {

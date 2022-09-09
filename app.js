@@ -21,7 +21,7 @@ const projects = [
   },
   {
     title: "Blog Website",
-    description: `Came across <a style='color:  #f6c688;' href='https://startbootstrap.com/previews/clean-blog/'>this blog template <a/>and decided to give it a backend. Here I performed basic CRUD operations and worked on database relationships`,
+    description: `Came across <a style='color:  #f6c688;' href='https://startbootstrap.com/previews/clean-blog/' target='_blank'>this blog template <a/>and decided to modify give it a backend. Here I performed basic CRUD operations and worked on database relationships.`,
     github: "https://github.com/ndujesco/blog",
     website: "https://random-musings.herokuapp.com/",
     tech: "Flask | Jinja | Postgres",

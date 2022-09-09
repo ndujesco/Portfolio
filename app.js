@@ -22,7 +22,7 @@ const projects = [
   {
     title: "Blog Website",
     description:
-      "A simple blog website where I put down random thoughts. Performs basic CRUD operations",
+      "Came across <a href='https://startbootstrap.com/previews/clean-blog/'>this blog template<a/>and decided to give it a backend. Here I performed basic CRUD operations and worked on database relationship",
     github: "https://github.com/ndujesco/blog",
     website: "https://random-musings.herokuapp.com/",
     tech: "Flask | Jinja | Postgres",
@@ -39,9 +39,8 @@ app.get("/works", (req, res) => {
   res.render("projects", { projects });
 });
 
-
 app.use((req, res) => {
   const url = decodeURI(req.url);
-  res.render("404", {url})
-})
+  res.render("404", { url });
+});
 app.listen(process.env.PORT || 3000);

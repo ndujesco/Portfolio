@@ -4,6 +4,13 @@ const app = express();
 
 const projects = [
   {
+    title: "TekTalk API",
+    description: `TekTalk is a social network aimed for tech driven individuals to be able to meet like minded individuals for whatever reason it may be. It is made for but not limited to techies. Tektalkalso welcomes everyone, guests included.`,
+    tech: "Nodejs | MongoDB",
+    github: "https://github.com/ndujesco/tek-talk-api",
+    website: "https://tektalk.vercel.app/",
+  },
+  {
     title: "E-Commerce Store",
     description:
       "A typical E-Commerce website for buying products. One gets to display their own products also.",

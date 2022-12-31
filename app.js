@@ -16,7 +16,7 @@ const projects = [
       "A typical E-Commerce website for buying products. One gets to display their own products also.",
     tech: "Nodejs | EJS | MongoDB",
     github: "https://github.com/ndujesco/shop-website",
-    website: "https://ugo-shop.herokuapp.com/",
+    website: "https://ugo-shop.up.railway.app/",
   },
   {
     title: "All time favourite movies",
@@ -24,13 +24,13 @@ const projects = [
       "Here, you get movie recommendations by viewing user's all time favourite movies. You can also contribute by creating your own list!",
     tech: "Nodejs | EJS | MongoDB",
     github: "https://github.com/ndujesco/favourite-movies",
-    website: "https://all-time-favourite.herokuapp.com/",
+    website: "https://all-time-favourite.up.railway.app/",
   },
   {
     title: "Blog Website",
     description: `Came across <a style='color:  #f6c688;' href='https://startbootstrap.com/previews/clean-blog/' target='_blank'>this blog template <a/>and decided to modify and give it a backend. Here I performed basic CRUD operations and worked on database relationships.`,
     github: "https://github.com/ndujesco/blog-nodejs",
-    website: "https://random-musings.herokuapp.com/",
+    website: "https://random-musings.up.railway.app/",
     tech: "Nodejs | Python | Flask | MongoDB",
   },
 ];

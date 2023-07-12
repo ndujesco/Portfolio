@@ -1,5 +1,5 @@
 const express = require("express");
-
+const path = require("path")
 const app = express();
 
 const projects = [
@@ -34,7 +34,11 @@ const projects = [
     tech: "Nodejs | Python | Flask | MongoDB",
   },
 ];
-app.use(express.static("public"));
+
+app.use(
+  express.static(path.join(__dirname, 'public')),
+);
+// app.use(express.static("public"));
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
